@@ -1,14 +1,20 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<!--Monitoring Code-->
-<script type="text/javascript" async="async" defer="defer" src="https://banckle-stage-apps.dynabic.com/chat/visitor.do?dep=1eb7494e-a1cb-429b-90f5-5ffd9a15b52c"></script>
+---
+layout: default
+---
 
-<!--Chat Link Code-->
-<a href="javascript:;" onclick="blc_startChat()">
-<img style='border:0px;' id="blc_chatImg" src='https://banckle-stage-apps.dynabic.com/chat/onlineImg.do?d=1eb7494e-a1cb-429b-90f5-5ffd9a15b52c'/>
-</a>
-</body>
-</html>
+<div class="home">
+
+  <h1>Posts</h1>
+
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
