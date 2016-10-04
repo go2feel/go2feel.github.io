@@ -8,3 +8,4 @@ url: "http://go2feel.github.io"
 # Build settings
 markdown: kramdown
 permalink: pretty
+theme: minima
