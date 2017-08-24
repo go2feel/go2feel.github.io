@@ -67,6 +67,7 @@ Markdown 简明指南
 
 code是\`，比如：`<div>`
 代码块是缩进1个tab
+或者是```开头结尾
 
 html代码可以直接写在markdown里面，block元素要留空行。比如：
 
